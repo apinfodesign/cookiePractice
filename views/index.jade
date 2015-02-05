@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	p
+	p#colorAnswer Your current favorite color is: 
+	p
+	form
+	p
+		label(for='myColor') Please change or enter your favorite color: 
+		input#myColor(type='text', name='color', list='colorList')
+		button Save
+	script(src='//code.jquery.com/jquery-2.1.3.min.js')
+	script(src='/javascripts/cookiePractice.js')
